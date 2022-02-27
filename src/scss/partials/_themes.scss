@@ -1,0 +1,38 @@
+body.light {
+  background-color: $lm-light-gray;
+  .header {
+    &__theme {
+      color: $lm-dark-blue;
+    }
+  }
+  .search-bar {
+    background-color: $lm-white;
+    &__icon {
+    }
+    &__input {
+      caret-color: $lm-blue;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__btn {
+      background-color: $lm-blue;
+      color: $lm-white;
+    }
+  }
+  ::placeholder {
+    color: $lm-desaturated-blue;
+  }
+  .result {
+    background-color: $lm-white;
+    &__name {
+      color: $lm-dark-blue;
+    }
+    &__nickname {
+      color: $lm-blue;
+    }
+    &__joined {
+      color: $lm-grayish-blue;
+    }
+  }
+}

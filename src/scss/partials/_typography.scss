@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header {
+  &__devfinder {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  &__theme {
+    &-current {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+    }
+  }
+}
+
+.search-bar {
+  &__input {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__btn {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.result {
+  &__profile {
+  }
+  &__profile-img {
+  }
+  &__profile-details {
+  }
+  &__name {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &__nickname {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &__joined {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &__stats-label {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  &__stat {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+input,
+button {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header__theme {
+  font-weight: 700;
+  text-transform: uppercase;
+}

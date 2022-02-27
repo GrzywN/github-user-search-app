@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="js/app.js" defer></script>
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body class="light">
+    <header class="header">
+      <h1 class="header__devfinder">devfinder</h1>
+      <div class="header__theme">
+        <h4 class="header__theme-current">Dark</h4>
+        <button class="header__theme-btn">
+          <img src="images/icon-moon.svg" alt="" class="header__theme-icon" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="search-bar">
+        <img src="images/icon-search.svg" alt="" class="search-bar__icon" />
+        <input
+          type="search"
+          placeholder="Search GitHub username…"
+          class="search-bar__input"
+        />
+        <button class="search-bar__btn">Search</button>
+      </div>
+      <div class="result">
+        <div class="result__profile">
+          <img
+            src="images/example-avatar.png"
+            alt=""
+            class="result__profile-img"
+          />
+          <div class="result__profile-details">
+            <h1 class="result__name">The Octocat</h1>
+            <h3 class="result__nickname">@octocat</h3>
+            <p class="result__joined">Joined 25 Jan 2011</p>
+          </div>
+        </div>
+        <p class="result__description">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          Quisque volutpat mattis eros.
+        </p>
+        <ul class="result__stats">
+          <li class="result__stats-item">
+            <p class="result__stats-label">Repos</p>
+            <p class="result__stat result__stat--repos">8</p>
+          </li>
+          <li class="result__stats-item">
+            <p class="result__stats-label">Followers</p>
+            <p class="result__stat result__stat--followers">3938</p>
+          </li>
+          <li class="result__stats-item">
+            <p class="result__stats-label">Following</p>
+            <p class="result__stat result__stat--following">9</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- 
+
+  Joined
+
+  Repos
+  Followers
+  Following -->

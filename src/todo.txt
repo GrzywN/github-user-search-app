@@ -1,0 +1,2 @@
+osobne klasy dla wygladu/skórek
+javascript daje klase i zmienia motyw
