@@ -1,8 +1,11 @@
-@import "partials/variables";
-@import "partials/helpers";
-@import "partials/mixins";
-@import "partials/base";
-@import "partials/layout";
-@import "partials/typography";
-@import "partials/modules";
-@import "partials/themes";
+@charset "UTF-8";
+
+@import 'abstracts/variables';
+
+@import 'vendors/normalize';
+
+@import 'base/base', 'base/fonts', 'base/typography';
+
+@import 'layout/header', 'layout/search-bar', 'layout/result';
+
+@import 'themes/theme-default', 'themes/theme-light', 'themes/theme-dark';

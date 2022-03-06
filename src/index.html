@@ -7,19 +7,31 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/main.min.css" />
-    <script src="js/app.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
+    <script src="js/dark-mode.js" defer></script>
     <title>Frontend Mentor | GitHub user search app</title>
   </head>
-  <body class="light">
+  <body>
     <header class="header">
       <h1 class="header__devfinder">devfinder</h1>
       <div class="header__theme">
-        <h4 class="header__theme-current">Dark</h4>
-        <button class="header__theme-btn">
-          <img src="images/icon-moon.svg" alt="" class="header__theme-icon" />
+        <a href="javascript:changeTheme()" class="header__theme-a"
+          ><h4 class="header__theme-current"></h4
+        ></a>
+        <button class="header__theme-button">
+          <img
+            src="images/icon-moon.svg"
+            alt=""
+            class="header__theme-icon header__theme-icon--moon"
+          />
+          <img
+            src="images/icon-sun.svg"
+            alt=""
+            class="header__theme-icon header__theme-icon--sun"
+          />
         </button>
       </div>
     </header>
@@ -31,48 +43,96 @@
           placeholder="Search GitHub username…"
           class="search-bar__input"
         />
-        <button class="search-bar__btn">Search</button>
+        <button class="search-bar__button">Search</button>
       </div>
       <div class="result">
         <div class="result__profile">
           <img
-            src="images/example-avatar.png"
+            src="https://avatars.githubusercontent.com/u/583231?v=4"
             alt=""
-            class="result__profile-img"
+            class="result__avatar"
           />
           <div class="result__profile-details">
-            <h1 class="result__name">The Octocat</h1>
-            <h3 class="result__nickname">@octocat</h3>
-            <p class="result__joined">Joined 25 Jan 2011</p>
+            <h1 class="result__name">Loading...</h1>
+            <h3 class="result__login">Loading...</h3>
+            <p class="result__joined">Loading...</p>
+            <p class="result__bio result__bio--large">Loading...</p>
           </div>
         </div>
-        <p class="result__description">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros.
-        </p>
+        <p class="result__bio result__bio--small">Loading...</p>
         <ul class="result__stats">
           <li class="result__stats-item">
             <p class="result__stats-label">Repos</p>
-            <p class="result__stat result__stat--repos">8</p>
+            <p class="result__stat result__stat--repos">0</p>
           </li>
           <li class="result__stats-item">
             <p class="result__stats-label">Followers</p>
-            <p class="result__stat result__stat--followers">3938</p>
+            <p class="result__stat result__stat--followers">0</p>
           </li>
           <li class="result__stats-item">
             <p class="result__stats-label">Following</p>
-            <p class="result__stat result__stat--following">9</p>
+            <p class="result__stat result__stat--following">0</p>
+          </li>
+        </ul>
+        <ul class="result__links">
+          <li class="result__links-item">
+            <img
+              src="images/icon-location.svg"
+              alt=""
+              class="result__links-icon result__links-icon--location"
+            />
+            <a
+              href="#"
+              target="_blank"
+              class="result__links-value result__links-value--location"
+            >
+              Loading...
+            </a>
+          </li>
+          <li class="result__links-item">
+            <img
+              src="images/icon-website.svg"
+              alt=""
+              class="result__links-icon result__links-icon--blog"
+            />
+            <a
+              href="#"
+              target="_blank"
+              class="result__links-value result__links-value--blog"
+            >
+              Loading...
+            </a>
+          </li>
+          <li class="result__links-item">
+            <img
+              src="images/icon-twitter.svg"
+              alt=""
+              class="result__links-icon result__links-icon--twitter"
+            />
+            <a
+              href="#"
+              target="_blank"
+              class="result__links-value result__links-value--twitter"
+            >
+              Loading...
+            </a>
+          </li>
+          <li class="result__links-item">
+            <img
+              src="images/icon-company.svg"
+              alt=""
+              class="result__links-icon result__links-icon--company"
+            />
+            <a
+              href="#"
+              target="_blank"
+              class="result__links-value result__links-value--company"
+            >
+              Loading...
+            </a>
           </li>
         </ul>
       </div>
     </main>
   </body>
 </html>
-
-<!-- 
-
-  Joined
-
-  Repos
-  Followers
-  Following -->

@@ -1,0 +1,75 @@
+body {
+  .header {
+    &__theme {
+      > * {
+        cursor: pointer;
+      }
+    }
+  }
+  .search-bar {
+    box-shadow: $box-shadow;
+    &__input {
+      caret-color: $blue;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__button {
+      cursor: pointer;
+      background-color: $blue;
+      color: $white;
+      transition: background-color 100ms ease;
+      position: relative;
+      &:hover,
+      &:active {
+        background-color: $light-blue;
+      }
+      &--no-results {
+        background-color: $light-blue;
+        &::before {
+          content: 'No results';
+          position: absolute;
+          z-index: 1000;
+          left: -100%;
+          transform: translateX(-25%);
+          color: $red;
+          width: max-content;
+        }
+      }
+    }
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  .result {
+    box-shadow: $box-shadow;
+    &__login {
+      color: $blue;
+    }
+  }
+}
+
+.golden {
+  color: gold !important;
+}
+
+// Making icons and items which are not available semi-transparent (based on js datasets) //
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+[data-available='false']:not(img) {
+  pointer-events: none;
+  opacity: 50%;
+}
+
+.result__links-item[data-available-parent='false'] {
+  opacity: 50%;
+  > [data-available='false'] {
+    opacity: 100%;
+  }
+}

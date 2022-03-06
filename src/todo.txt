@@ -1,2 +1,10 @@
 osobne klasy dla wygladu/skórek
 javascript daje klase i zmienia motyw
+przycisk jest za maly chyba
+light i dark za pomocą pseudoelementów
+description -> bio / ogolnie zmiana html na to co jest w jsonie
+jedno bio sie wylacza drugie wlacza
+
+displayData za pomocą pętli iterowalnej po obiekcie foreach
+
+ikony muszą zmieniac pzrzezroczystosz dla not avaiable

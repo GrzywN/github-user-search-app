@@ -1,0 +1,116 @@
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.header {
+  &__devfinder {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  &__theme {
+    &-a {
+      text-decoration: none;
+    }
+    &-current {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.search-bar {
+  &__input {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__button {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.result {
+  &__name {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &__login {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &__joined {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &__bio {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__stats-label {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  &__stat {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &__links-value {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    &__theme {
+      &-current {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .search-bar {
+    &__input {
+      font-size: 18px;
+    }
+    &__button {
+      font-size: 1rem;
+    }
+  }
+  .result {
+    &__name {
+      font-size: 26px;
+    }
+    &__login {
+      font-size: 1rem;
+    }
+    &__joined {
+      font-size: 15px;
+    }
+    &__bio {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__stats-label {
+      font-size: 13px;
+    }
+    &__stat {
+      font-size: 22px;
+    }
+    &__links-value {
+      font-size: 15px;
+    }
+  }
+}
