@@ -5,7 +5,7 @@ export default class SearchApp {
 
   twitterTemplate = 'https://twitter.com/';
 
-  companyTemplate = 'https://github.com/';
+  githubTemplate = 'https://github.com/';
 
   init({ ...search }, { ...display }) {
     this.search = { ...search };
@@ -93,10 +93,8 @@ export default class SearchApp {
       this.display.name.classList.add('golden');
       this.display.login.classList.add('golden');
       this.display.joined.classList.add('golden');
-      this.display.bioSmall.innerText =
-        'Hope you enjoyed my project! Have a great day!';
-      this.display.bioLarge.innerText =
-        'Hope you enjoyed my project! Have a great day!';
+      this.display.bioSmall.innerText = 'Hope you enjoyed my project! Have a great day!';
+      this.display.bioLarge.innerText = 'Hope you enjoyed my project! Have a great day!';
     } else {
       this.display.avatar.classList.remove('golden');
       this.display.name.classList.remove('golden');
@@ -106,15 +104,14 @@ export default class SearchApp {
   }
 
   setUpLinks(data) {
-    if (this.display.location.dataset.available !== 'false')
-      this.display.location.href = `${this.locationTemplate}${data.location}`;
-    if (this.display.blog.dataset.available !== 'false')
-      this.display.blog.href = data.blog;
-    if (this.display.twitter.dataset.available !== 'false')
-      this.display.twitter.href = `${this.twitterTemplate}${data.twitter_username}`;
-    if (this.display.company.dataset.available !== 'false')
-      this.display.company.href = `${this.companyTemplate}${data.company.substr(
+    this.display.login.href = `${this.githubTemplate}${data.login}`;
+    if (this.display.location.dataset.available !== 'false') this.display.location.href = `${this.locationTemplate}${data.location}`;
+    if (this.display.blog.dataset.available !== 'false') this.display.blog.href = data.blog;
+    if (this.display.twitter.dataset.available !== 'false') this.display.twitter.href = `${this.twitterTemplate}${data.twitter_username}`;
+    if (this.display.company.dataset.available !== 'false') {
+      this.display.company.href = `${this.githubTemplate}${data.company.substr(
         1,
       )}`;
+    }
   }
 }

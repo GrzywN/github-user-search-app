@@ -45,6 +45,16 @@ body {
     box-shadow: $box-shadow;
     &__login {
       color: $blue;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &__links-value {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -54,13 +64,6 @@ body {
 }
 
 // Making icons and items which are not available semi-transparent (based on js datasets) //
-
-a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 [data-available='false']:not(img) {
   pointer-events: none;

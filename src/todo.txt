@@ -8,3 +8,10 @@ jedno bio sie wylacza drugie wlacza
 displayData za pomocą pętli iterowalnej po obiekcie foreach
 
 ikony muszą zmieniac pzrzezroczystosz dla not avaiable
+https://codepen.io/ClementParis016/pen/ORLdOo
+
+transition na hovery i dodatkowe efekty
+
+// https://codepen.io/ClementParis016/pen/ORLdOo
+// https://nikitahl.com/listen-for-class-change-in-javascript
+
