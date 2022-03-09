@@ -105,7 +105,7 @@ export default class SearchApp {
 
   setUpLinks(data) {
     this.display.login.href = `${this.githubTemplate}${data.login}`;
-    if (this.display.location.dataset.available !== 'false') this.display.location.href = `${this.locationTemplate}${data.location}`;
+    if (this.display.location.dataset.available !== 'false') this.display.location.href = `${this.locationTemplate}${data.location}`.replace(/ /g, '%20');
     if (this.display.blog.dataset.available !== 'false') this.display.blog.href = data.blog;
     if (this.display.twitter.dataset.available !== 'false') this.display.twitter.href = `${this.twitterTemplate}${data.twitter_username}`;
     if (this.display.company.dataset.available !== 'false') {
