@@ -26,6 +26,7 @@ const App = new SearchApp();
 window.addEventListener('load', () => {
   App.init(search, display);
 });
+
 search.button.addEventListener('click', () => {
   search.button.classList.remove('search-bar__button--no-results');
   App.init(search, display);

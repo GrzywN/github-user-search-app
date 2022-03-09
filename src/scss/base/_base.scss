@@ -10,7 +10,6 @@ html {
   padding: 0;
   border: 0;
   background-color: transparent;
-  // border: 1px dashed grey;
 }
 
 body {
@@ -39,6 +38,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: clamp(1em, calc(1em + 0.25vw), 1.25em);
   }
 }
 

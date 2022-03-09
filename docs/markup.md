@@ -58,7 +58,7 @@
   />
 <link rel="stylesheet" href="css/main.min.css" />
 <script type="module" src="js/app.js"></script>
-<script src="js/themes.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<script src="./js/animations.js" defer></script>
+<script src="js/vendor/particles.min.js"></script>
+<script src="js/visuals.js" defer></script>
 ```

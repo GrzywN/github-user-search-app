@@ -2,7 +2,7 @@
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 3rem;
-  border-radius: 15px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -13,8 +13,8 @@
     margin-bottom: 0.5em;
   }
   &__avatar {
-    height: 70px;
-    width: 70px;
+    height: 4.375rem;
+    width: 4.375rem;
     border-radius: 50%;
   }
   &__bio {
@@ -31,8 +31,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 85px;
-    border-radius: 10px;
+    min-height: 5.3125rem;
+    border-radius: 0.5rem;
   }
   &__stats-item {
     width: 100%;
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .result {
     padding: 2.5rem;
     gap: 2rem;
@@ -59,8 +59,8 @@
       gap: 2.5em;
     }
     &__avatar {
-      height: 117px;
-      width: 117px;
+      height: 7.3125rem;
+      width: 7.3125rem;
     }
     &__stats {
       margin-top: 0.5rem;
@@ -80,7 +80,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75rem) {
   .result {
     &__profile-details {
       align-self: flex-start;
@@ -113,7 +113,7 @@
     &__description,
     &__stats,
     &__links {
-      margin-left: 117px + 16px;
+      margin-left: 8.3125rem;
     }
   }
 }

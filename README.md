@@ -12,8 +12,6 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/GrzywN/github-user-search-app)
+- Live Site URL: [Netlify](https://relaxed-hopper-1aeca1.netlify.app/)
 
 ## My process
 
@@ -42,14 +40,13 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - SCSS custom properties
-- Flexbox
-- CSS Grid
-- Vanilla JavaScript
+- Flexbox / CSS Grid
 - Mobile-first workflow
+- Vanilla JavaScript
 - GSAP animations
+- Particle.js particle effects
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@GrzywN](https://www.frontendmentor.io/profile/GrzywN)
+- Twitter - [@GrzywN](https://www.twitter.com/GrzywN)

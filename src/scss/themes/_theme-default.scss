@@ -18,7 +18,7 @@ body {
       cursor: pointer;
       background-color: $blue;
       color: $white;
-      transition: background-color 100ms ease;
+      transition: $transition-hover;
       position: relative;
       &:hover,
       &:active {
@@ -34,6 +34,7 @@ body {
           transform: translateX(-25%);
           color: $red;
           width: max-content;
+          pointer-events: none;
         }
       }
     }
@@ -58,6 +59,8 @@ body {
     }
   }
 }
+
+// Easter egg //
 
 .golden {
   color: gold !important;
